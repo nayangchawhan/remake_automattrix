@@ -173,6 +173,22 @@ img {
     padding: 4rem 0 3rem;
     transition: .4s;
   }
+  .home__title{
+    scale: 0.6;
+    margin-left: -100px;
+  }
+
+  .home__subtitle{
+    scale: 0.7;
+  }
+
+  .discount__img{
+    display: none;
+  }
+
+  .specs__img{
+    display: none;
+  }
 }
 
 .nav__list {
@@ -237,7 +253,12 @@ img {
 }
 
 .home__data {
-  padding-top: 5rem;
+  display: flex;
+    flex-direction: column; /* Align children vertically */
+    width: 100%; /* Full width */
+    max-width: 100vw; /* Prevent overflow */
+    padding: 0 1rem; /* Optional padding */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .home__header {
@@ -268,8 +289,11 @@ img {
 }
 
 .home__description {
-  margin-bottom: var(--mb-2-5);
-  line-height: var(--text-line-height);
+  flex-grow: 1; /* Allow description to take available space */
+    line-height: var(--text-line-height);
+    margin-bottom: var(--mb-2-5);
+    overflow-wrap: break-word; /* Ensure long words break to the next line */
+    word-wrap: break-word; /* For older browsers */
 }
 
 .home__price {
