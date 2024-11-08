@@ -391,6 +391,7 @@ img {
   width: 250px;
   position: absolute;
   left: -7rem;
+  scale: 3.5;
 }
 
 .case__description {
@@ -435,7 +436,7 @@ img {
 
 .products__card {
   position: relative;
-  height: 132px;
+  height: 32px;
   background-color: var(--container-color);
   padding: .75rem;
   border-radius: .5rem;
@@ -750,7 +751,7 @@ img {
     padding-top: 5rem;
   }
   .products__card {
-    height: 152px;
+    height: 52px;
     padding: .85rem;
   }
   .products__img {
